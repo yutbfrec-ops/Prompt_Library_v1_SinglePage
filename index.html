@@ -490,8 +490,7 @@ function buildFromForm(){
   let pos = parts.join(", ").replace(/\s+/g," ").replace(/,\s*,/g,", ").trim();
   let neg = DEFAULT_NEG + (negExtra ? (", " + negExtra) : "");
 
-  if(lang === "zh") pos = "（建議仍用英文）
-" + pos;
+  if(lang === "zh") pos = "（建議仍用英文）\n" + pos;
 
   $("outPos").value = pos;
   $("outNeg").value = neg;
